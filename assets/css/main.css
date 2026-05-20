@@ -1108,6 +1108,34 @@ section,
 .services .service-card .service-link:hover {
   gap: 0.75rem;
 }
+.services .service-card .service-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.services .service-card .service-actions .service-link {
+  justify-content: center;
+  padding: 0.7rem 1.15rem;
+  border-radius: 50px;
+  font-size: 0.92rem;
+  line-height: 1;
+}
+.services .service-card .service-actions .service-link-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+.services .service-card .service-actions .service-link-secondary {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--accent-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+.services .service-card .service-actions .service-link-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+}
+.services .service-card .service-actions .service-link-secondary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+}
 .services .service-image-block {
   height: 100%;
   border-radius: 8px;
@@ -2814,11 +2842,13 @@ section,
   padding: 1.5rem;
 }
 .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info h4 {
+  color: var(--contrast-color);
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info p {
+  color: var(--contrast-color);
   font-size: 0.95rem;
   opacity: 0.9;
   margin-bottom: 1.5rem;
@@ -2848,6 +2878,34 @@ section,
 .service-details .portfolio-showcase .project-showcase-item:hover .project-image .project-overlay {
   opacity: 1;
 }
+.service-details .cta-container {
+  margin-top: 5rem;
+  padding: 3rem;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-radius: 10px;
+}
+.service-details .cta-container h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+.service-details .cta-container p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+.service-details .cta-container .btn-cta {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.service-details .cta-container .btn-cta:hover {
+  background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+  transform: translateY(-3px);
+}
 @media (max-width: 992px) {
   .service-details .service-sidebar {
     position: static;
@@ -2855,6 +2913,12 @@ section,
   }
   .service-details .service-main-content .content-section h1 {
     font-size: 2rem;
+  }
+  .service-details .cta-container {
+    padding: 2rem;
+  }
+  .service-details .cta-container h3 {
+    font-size: 1.5rem;
   }
   .service-details .service-main-content .methodology-section .methodology-timeline::before {
     left: 30px;
