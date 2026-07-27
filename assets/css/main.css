@@ -592,7 +592,7 @@ h6 {
   position: relative;
 }
 .page-title h1 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
 }
 .page-title .breadcrumbs ol {
@@ -895,7 +895,7 @@ section,
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
-.about .achievement-boxes .achievement-box h3 {
+.about .achievement-boxes .achievement-box div {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
@@ -2841,7 +2841,7 @@ section,
   color: var(--contrast-color);
   padding: 1.5rem;
 }
-.service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info h4 {
+.service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info h3 {
   color: var(--contrast-color);
   font-size: 1.3rem;
   font-weight: 600;
