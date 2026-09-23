@@ -1036,6 +1036,8 @@ section,
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .services .service-card:hover {
   transform: translateY(-5px);
@@ -1108,11 +1110,16 @@ section,
 .services .service-card .service-link:hover {
   gap: 0.75rem;
 }
+.services .service-card > .service-link {
+  align-self: flex-start;
+  margin-top: auto;
+}
 .services .service-card .service-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.75rem;
-  margin-top: 1.5rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
 }
 .services .service-card .service-actions .service-link {
   justify-content: center;
@@ -1122,19 +1129,37 @@ section,
   line-height: 1;
 }
 .services .service-card .service-actions .service-link-primary {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-.services .service-card .service-actions .service-link-secondary {
   background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
   color: var(--accent-color);
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 55%);
 }
+.services .service-card .service-actions .service-link-secondary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border: 1px solid var(--accent-color);
+}
 .services .service-card .service-actions .service-link-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 .services .service-card .service-actions .service-link-secondary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+  border-color: color-mix(in srgb, var(--accent-color), #000 15%);
+}
+/* Every row of cards matches the tallest card on the page */
+@media (min-width: 768px) {
+  .services .service-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+  }
+  .services .service-card-grid > * {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .services .service-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 .services .service-image-block {
   height: 100%;
