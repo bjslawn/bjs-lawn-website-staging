@@ -459,10 +459,16 @@ h6 {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.footer h4,
-.footer .footer-heading {
+/* Footer column labels ("Sitemap", "Legal Pages", "Address"). Plain text, not
+   headings, so they stay out of each page's heading outline. Styled to match
+   the theme's headings. */
+.footer .footer-top .footer-heading {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
   font-size: 16px;
   font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
   position: relative;
   padding-bottom: 12px;
 }

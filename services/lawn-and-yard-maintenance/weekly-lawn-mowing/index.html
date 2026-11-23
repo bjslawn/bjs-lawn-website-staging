@@ -170,7 +170,8 @@
   <link href="/bjs-lawn-website-staging/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="/bjs-lawn-website-staging/assets/css/main.css" rel="stylesheet">
+  <!-- ?v= changes on every build so browsers never pair new HTML with a cached old stylesheet -->
+  <link href="/bjs-lawn-website-staging/assets/css/main.css?v=1795462549" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
@@ -451,8 +452,8 @@
           <p>BJ's proudly provides weekly lawn maintenance to over 175 residential homes, multi-family homeowners associations, and businesses.</p>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h2 class="footer-heading">Sitemap</h2>
+        <nav class="col-lg-2 col-6 footer-links" aria-label="Footer sitemap">
+          <p class="footer-heading">Sitemap</p>
           <ul>
             <li><a href="/bjs-lawn-website-staging/">Home</a></li>
             <li><a href="/bjs-lawn-website-staging/about/">About Us</a></li>
@@ -460,18 +461,18 @@
             <li><a href="/bjs-lawn-website-staging/work/">Our Work</a></li>
             <li><a href="/bjs-lawn-website-staging/contact/">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h2 class="footer-heading">Legal Pages</h2>
+        <nav class="col-lg-2 col-6 footer-links" aria-label="Legal pages">
+          <p class="footer-heading">Legal Pages</p>
           <ul>
             <li><a href="/bjs-lawn-website-staging/privacy/">Privacy Policy</a></li>
             <li><a href="/bjs-lawn-website-staging/accessibility/">Accessibility Policy</a></li>
           </ul>
-        </div>
+        </nav>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h2 class="footer-heading">Address</h2>
+          <p class="footer-heading">Address</p>
           <p>119 E Palatine Rd #214</p>
           <p>Palatine, IL 60067</p>
           <p>United States</p>
