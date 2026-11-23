@@ -459,7 +459,8 @@ h6 {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.footer h4 {
+.footer h4,
+.footer .footer-heading {
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -3574,7 +3575,7 @@ section,
 .contact .contact-info-panel .contact-info-header {
   margin-bottom: 30px;
 }
-.contact .contact-info-panel .contact-info-header h3 {
+.contact .contact-info-panel .contact-info-header h2 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -3624,7 +3625,7 @@ section,
   font-size: 20px;
   color: var(--contrast-color);
 }
-.contact .info-card .card-content h4 {
+.contact .info-card .card-content h3 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -3682,7 +3683,7 @@ section,
   padding: 35px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
 }
-.contact .form-container h3 {
+.contact .form-container h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 15px;
